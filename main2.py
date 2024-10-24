@@ -2,8 +2,8 @@ import telebot as t
 import requests
 import json
 
-bot = t.TeleBot("7597352034:AAERRI9ifzhXbaRiyeOOWWHxjvDDixzU8Cs")
-WeatherAPI = "de4d5b42cc1c310d27e1c75beca01647"
+bot = t.TeleBot("Your_Token")
+WeatherAPI = "Your_Token" #Openweather.com token*
 print("Bot successfully started!")
 @bot.message_handler(commands=["start", "restart"])
 def start(message):
