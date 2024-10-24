@@ -8,7 +8,7 @@ import random as r
 
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = t.TeleBot("7509395019:AAGKTPLP2_2zNWJCjQLNuHZCEG0TyZN4edY")
+bot = t.TeleBot("Your_Token")
 print("Bot successfully started!")
 
 jokes1 = ["""— Вчера долго пыталась объяснить бабуле, что работаю программистом.
