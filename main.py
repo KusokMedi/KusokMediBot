@@ -107,6 +107,7 @@ def start(message):
 # random - Бросить кубик 🎲
 # joke - Рандомная шутка 😂
 # fact - Рандмный факт 🤔
+# meme - Мемасик 🤪
 
 # Help Script
 def help(message):
@@ -118,7 +119,8 @@ def help(message):
     4. /weather - Погода ⛅️
     5. /random - Бросить кубик 🎲
     6. /joke - Рандомная шутка 😂
-    7. /fact - Рандмный факт 🤔""", parse_mode="html")
+    7. /fact - Рандмный факт 🤔
+    8. /meme - Мемасик 🤪""", parse_mode="html")
 
 
 # Socialmedia scrpit
@@ -181,7 +183,42 @@ def joke(message):
     global facts1
     randomfactsi = r.choice(facts1)
     bot.send_message(message.chat.id, f"Рандомный факт:\n{randomfactsi}")
-
+# Memes
+@bot.message_handler(commands=['meme'])
+def send_mem(message):
+    randommemeid = randint(0,9)
+    if randommemeid == 0:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme1.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 1:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme2.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 2:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme3.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 3:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme4.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 4:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme5.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 5:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme6.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 6:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme7.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 7:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme8.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 8:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme9.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    elif randommemeid == 9:
+        with open('C:\\Users\\Matvejs Upesleja\\Desktop\\Prog memes\\meme10.jpg', 'rb') as f:
+            bot.send_photo(message.chat.id, f)
+    else:
+        bot.send_message(message.chat.id, "Ета ошибка невозможна\n0_0\nКАААКК?!")
 # shop
 # @bot.message_handler(commands=["shop"])
 # def shop(message):
