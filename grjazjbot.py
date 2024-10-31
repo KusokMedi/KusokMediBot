@@ -2,7 +2,7 @@ import telebot
 from random import choice, shuffle
 
 # Замените на ваш токен бота
-bot = telebot.TeleBot('7760920646:AAHsSIQ7FObm75MeoA-d_ffeeCUevkidyC4')
+bot = telebot.TeleBot('YOUR_TELEGRAM_BOT_TOKEN')
 
 # Словарь с вопросами и ответами
 questions = {
